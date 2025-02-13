@@ -3,7 +3,7 @@ name: Deploy ASP.NET Core MVC 8 to Azure
 on:
   push:
     branches:
-      - main  # Change to your deployment branch
+      - master  # Change to your deployment branch
   workflow_dispatch:
  
 jobs:
@@ -36,5 +36,5 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
-        app-name: "<your-app-service-name>"  # Replace with your Azure App Service name
+        app-name: "ParitoshAzureWebAppService"  # Replace with your Azure App Service name
         package: myapp
